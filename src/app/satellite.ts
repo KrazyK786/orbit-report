@@ -4,6 +4,13 @@ export class Satellite {
     type:string;
     operational:boolean;
     launchDate:string;
+    shouldShowWarning = function():boolean{
+        // return (this.type.toLower() === "space debris")?true:false;
+        if (this.type === "Space Debris"){
+            return true;
+        }
+        return false;
+    }
 
     constructor(name:string,type:string,launchDate:string,orbitType:string,operational:boolean){
         this.name = name;
