@@ -13,7 +13,6 @@ export class AppComponent {
   displayList:Satellite[] = [];
 
   search(searchTerm:string):void{
-    console.log(searchTerm);
     let matchingSatellites: Satellite[] = [];
     searchTerm = searchTerm.toLowerCase();
     for (let i = 0;i<this.sourceList.length;i++){
