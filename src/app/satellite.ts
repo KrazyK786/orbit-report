@@ -6,7 +6,7 @@ export class Satellite {
     launchDate:string;
     shouldShowWarning = function():boolean{
         // return (this.type.toLower() === "space debris")?true:false;
-        if (this.type.toLower() === "space debris"){
+        if (this.type.toLowerCase() === "space debris"){
             return true;
         }
         return false;
